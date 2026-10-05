@@ -26,7 +26,7 @@ Abre `http://localhost:4173`. No es necesario instalar paquetes. La copia al por
 
 El documento recibido no incluía la captura de Facebook ni el logo oficial. Se utiliza una marca tipográfica temporal `<sw/> STUDIO WEB`, basada en la descripción del encargo, y los colores indicados. No se han inventado teléfonos, correo, perfiles sociales, reseñas ni clientes. Los cinco trabajos se identifican como conceptos.
 
-El formulario NO envía información hasta configurar un destino real. Los enlaces de contacto sin configurar llevan al formulario e indican que el canal no está disponible. El botón flotante lleva al contacto hasta añadir WhatsApp. Esta versión es una entrega de archivos; no se ha publicado en una cuenta de GitHub.
+El formulario NO envía información hasta configurar un destino real. Los enlaces de contacto sin configurar llevan al formulario e indican que el canal no está disponible. El botón flotante lleva al contacto hasta añadir WhatsApp. El repositorio de publicación es `nyra25346-dotcom/studio-web`. GitHub Pages está configurado desde `main`, carpeta raíz.
 
 ## Cambiar el logo
 

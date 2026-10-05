@@ -15,4 +15,4 @@ Fecha: 5 de octubre de 2026.
 
 ## Límites
 
-No se ha realizado una auditoría formal de accesibilidad, medición Lighthouse ni prueba en dispositivos físicos. El soporte de movimiento reducido está implementado en CSS y JavaScript. Las integraciones de WhatsApp, redes y formulario necesitan los datos reales del propietario; la entrega de mensajes debe probarse después de conectarlas. No se ha publicado la web en GitHub porque no se ha proporcionado un repositorio de destino. Se incluye la guía de publicación completa.
+No se ha realizado una auditoría formal de accesibilidad, medición Lighthouse ni prueba en dispositivos físicos. El soporte de movimiento reducido está implementado en CSS y JavaScript. Las integraciones de WhatsApp, redes y formulario necesitan los datos reales del propietario; la entrega de mensajes debe probarse después de conectarlas. GitHub Pages está configurado en `nyra25346-dotcom/studio-web`, desde `main` y la carpeta raíz. Se incluye la guía para futuras actualizaciones.
