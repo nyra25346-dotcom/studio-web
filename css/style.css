@@ -32,7 +32,7 @@ a:focus-visible,button:focus-visible,summary:focus-visible,input:focus-visible,s
 .desktop-nav{display:flex;gap:28px;font-size:.86rem}
 .desktop-nav a{color:#c1cad7;transition:.2s}
 .desktop-nav a:hover{color:var(--bright)}
-.button{display:inline-flex;justify-content:center;align-items:center;gap:32px;padding:17px 24px;background:var(--blue);border:1px solid var(--blue);color:#fff;font-size:.78rem;line-height:1.5;font-weight:750;letter-spacing:.05em;text-transform:uppercase;min-height:50px;transition:background .2s,transform .2s}
+.button{display:inline-flex;justify-content:center;align-items:center;gap:32px;padding:17px 24px;background:#006fc9;border:1px solid #168fea;color:#fff;font-size:.78rem;line-height:1.5;font-weight:750;letter-spacing:.05em;text-transform:uppercase;min-height:50px;transition:background .2s,transform .2s}
 .button:hover{background:#0878d4}
 .button span,.text-link span{transition:transform .2s}
 .button:hover span,.text-link:hover span{transform:translate(3px,-3px)}
@@ -364,7 +364,7 @@ h2{font-size:2rem}
 .header{gap:18px}
 .language-switch{display:flex;flex-shrink:0;border:1px solid #ffffff38;border-radius:4px;padding:3px;gap:2px}
 .language-switch button{background:transparent;border:0;border-radius:2px;color:#b8c8dc;padding:8px 10px;min-width:42px;min-height:40px;font-size:.75rem;font-weight:800;line-height:1;transition:background .2s,color .2s}
-.language-switch button[aria-pressed="true"]{background:var(--blue);color:#fff}
+.language-switch button[aria-pressed="true"]{background:#006fc9;color:#fff}
 .language-switch button:hover{color:#fff;background:#1b4070}
 .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
 
@@ -419,7 +419,7 @@ html[lang="en"] .hero h1{font-size:clamp(2.85rem,11.8vw,3.8rem)}
 .timeline p{max-width:480px;margin-top:12px}
 .final-cta{min-height:80svh}
 .final-cta h2{font-size:clamp(2rem,7.2vw,4rem)}
-.floating-contact{position:fixed;z-index:25;display:flex;align-items:center;justify-content:space-between;gap:10px;bottom:max(12px,env(safe-area-inset-bottom));left:6vw;right:6vw;background:#008cff;color:#fff;padding:15px 20px;min-height:54px;border:1px solid #55b2ff;box-shadow:0 6px 25px #0008;font-size:.75rem;font-weight:800;text-transform:uppercase}
+.floating-contact{position:fixed;z-index:25;display:flex;align-items:center;justify-content:space-between;gap:10px;bottom:max(12px,env(safe-area-inset-bottom));left:6vw;right:6vw;background:#006fc9;color:#fff;padding:15px 20px;min-height:54px;border:1px solid #55b2ff;box-shadow:0 6px 25px #0008;font-size:.75rem;font-weight:800;text-transform:uppercase}
 .floating-label{display:inline}
 .section{scroll-margin-bottom:85px}
 .footer-wordmark{padding-bottom:45px}
