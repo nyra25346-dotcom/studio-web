@@ -250,6 +250,34 @@ const EN_TRANSLATIONS = {
   "Web Esencial": "Essential Website",
   "Web Pro": "Pro Website"
 };
+Object.assign(EN_TRANSLATIONS,{
+  "Tu restaurante tiene personalidad. Creamos una web a su altura, pensada para convertir visitas en reservas y pedidos.": "Your restaurant has character. We create a website to match, designed to turn visits into bookings and orders.",
+  "Cinco conceptos. Cinco identidades. Explora las webs y descubre lo que podemos crear para tu restaurante.": "Five concepts. Five identities. Explore the websites and discover what we could create for your restaurant.",
+  "Precios": "Pricing",
+  "Reservas & conversión": "Bookings & conversion",
+  "Una web con identidad propia. Rápida, clara y lista para móvil.": "A website with its own identity. Fast, clear and ready for mobile.",
+  "Diseño personalizado · SEO básico · Google Maps": "Bespoke design · Basic SEO · Google Maps",
+  "Tus platos, precios y alérgenos, a mano desde cualquier móvil.": "Your dishes, prices and allergens, easy to find on any phone.",
+  "Carta organizada · Acceso QR · Actualizaciones": "Organised menu · QR access · Updates",
+  "De la primera visita a la próxima mesa: facilita cada contacto.": "From the first visit to the next booking: make every interaction easy.",
+  "WhatsApp · Reservas · Pedidos a domicilio": "WhatsApp · Bookings · Delivery orders",
+  "Conservamos tu esencia y renovamos la experiencia.": "We keep your character and refresh the experience.",
+  "Identidad visual · Navegación · Rendimiento": "Visual identity · Navigation · Performance",
+  "TU RESTAURANTE": "YOUR RESTAURANT",
+  "MERECE UNA WEB": "DESERVES A WEBSITE",
+  "A SU ALTURA.": "TO MATCH.",
+  "Web actual (opcional)": "Current website (optional)",
+  "www.turestaurante.es": "www.yourrestaurant.com",
+  "¿Qué necesitas?": "What do you need?",
+  "Se abrirá WhatsApp con tu consulta. Revisa el mensaje y pulsa enviar allí.": "WhatsApp will open with your enquiry. Review the message and send it there.",
+  "Enviar por WhatsApp": "Send via WhatsApp",
+  "Hablemos por WhatsApp": "Let’s talk on WhatsApp",
+  "Hola Studio Web,": "Hello Studio Web,",
+  "Estoy interesado en": "I’m interested in",
+  "Tu consulta está preparada en WhatsApp. Revisa el mensaje y pulsa enviar allí.": "Your enquiry is ready in WhatsApp. Review the message and send it there.",
+  "Hola, he visto vuestra web de Studio Web y me gustaría mejorar la página web de mi restaurante.": "Hello, I’ve seen your Studio Web website and I’d like to improve my restaurant’s website."
+});
+Object.assign(EN_TRANSLATIONS,{"Acordamos el calendario antes de empezar, según el alcance, los contenidos y las revisiones.": "We agree the schedule before starting, based on scope, content and revisions.", "Podemos utilizar tu dominio o ayudarte a registrar uno a tu nombre. Dominio y alojamiento se detallan en el presupuesto.": "We can use your domain or help you register one in your name. Domain and hosting are detailed in the quote.", "Sí. Acordamos cómo actualizarla, con cambios puntuales o mantenimiento opcional.": "Yes. We agree how to update it, with one-off changes or optional maintenance.", "Sí. Revisamos navegación, carta y botones en móvil, tablet y ordenador.": "Yes. We check navigation, menus and buttons on phones, tablets and computers.", "Sí. Conectamos tu número con un mensaje inicial para facilitar el contacto.": "Yes. We connect your number with a prefilled message to make contact easier.", "Sí. Conectamos una solución compatible y acordamos antes las funciones y costes externos.": "Yes. We connect a compatible solution and agree its features and external costs beforehand.", "Sí. Trabajamos a distancia con negocios de hostelería de toda España.": "Yes. We work remotely with hospitality businesses across Spain.", "El mantenimiento es opcional. Los costes recurrentes de dominio, alojamiento y terceros se detallan antes de contratar.": "Maintenance is optional. Recurring domain, hosting and third-party costs are detailed before you commit.", "Una experiencia clara desde la primera pantalla.": "A clear experience from the first screen.", "Tu identidad, en cada detalle.": "Your identity, in every detail.", "Reservar, pedir o llegar. Sin rodeos.": "Book, order or find us. Without the hassle.", "Carga ligera. Uso sencillo.": "Lightweight pages. Simple to use."});
 (() => {
   const storageKey='studio-web-language';
   let language='es';
@@ -290,7 +318,7 @@ const EN_TRANSLATIONS = {
     document.querySelector('meta[property="og:locale"]').content=language==='en'?'en_GB':'es_ES';
     document.querySelectorAll('[data-language]').forEach(button=>button.setAttribute('aria-pressed',String(button.dataset.language===language)));
     if(statusEl.dataset.sourceMessage)showStatus(statusEl.dataset.sourceMessage);
-    if(whatsapp.length>=8)document.querySelectorAll('.whatsapp-link,.floating-contact').forEach(a=>a.href=`https://wa.me/${whatsapp}?text=${encodeURIComponent(translate(message))}`);
+    updateContactLinks();updateSticky();
     try{localStorage.setItem(storageKey,language)}catch{}
     if(announce)document.querySelector('#language-status').textContent=language==='en'?'Language changed to English.':'Idioma cambiado a español.';
   }

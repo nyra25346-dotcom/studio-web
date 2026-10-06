@@ -1,7 +1,6 @@
 /* Edita aquí los datos comerciales. Deja vacíos los destinos que aún no estén disponibles. */
 window.STUDIO_CONFIG = {
-  WHATSAPP_NUMBER: '', EMAIL: '', INSTAGRAM_URL: '', FACEBOOK_URL: '',
-  FORM_ENDPOINT: '',
+  WHATSAPP_NUMBER: '212701192223', EMAIL: '', INSTAGRAM_URL: '', FACEBOOK_URL: '',
   PRICING: { essential: 249, pro: 449, maintenance: 19 },
   PROJECTS: [
     {id:'hotaru',name:'HOTARU',category:'Restaurante japonés · Madrid',style:'Minimalista. Preciso. Japonés.',description:'Una experiencia digital minimalista inspirada en la precisión, el sushi y la gastronomía japonesa contemporánea.',tags:['Diseño web','Adaptación móvil','Carta','Reservas'],url:'https://nyra25346-dotcom.github.io/hotaru-madrid-concept/'},
