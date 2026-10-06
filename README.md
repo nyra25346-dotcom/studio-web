@@ -125,3 +125,9 @@ Menú móvil con diálogo nativo, cierre con Escape y recuperación del foco; co
 ## Verificación de entrega
 
 Comprobados los cinco conceptos, la ausencia de desbordamiento horizontal en 375, 390, 430, 768 y 1440 píxeles, los recursos locales, los enlaces internos, el menú móvil, el acordeón y el aviso/copia del formulario sin destino. La prueba de entrega real del formulario queda pendiente hasta configurar tu proveedor. El documento `QA.md` resume los límites de estas comprobaciones.
+
+## Selector español / inglés
+
+El botón ES / EN de la cabecera cambia todo el contenido de la web, incluidos los proyectos, FAQ, etiquetas accesibles y mensajes del formulario. El idioma inicial es español. La elección se guarda solo en este navegador mediante `localStorage` (`studio-web-language`); si el almacenamiento está desactivado, el selector sigue funcionando durante la visita. Las capturas de los proyectos conservan su idioma original porque son imágenes de las webs de referencia. Los borradores escritos por el visitante no se modifican al cambiar de idioma.
+
+La traducción inglesa se edita en `js/i18n.js`, en `EN_TRANSLATIONS`. Cada clave coincide con el texto español original. Si cambias un texto español, actualiza su clave y la traducción correspondiente. Se actualizan también `lang`, el título y los metadatos de texto en el navegador; no se crean rutas separadas para posicionamiento multilingüe.

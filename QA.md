@@ -16,3 +16,7 @@ Fecha: 5 de octubre de 2026.
 ## Límites
 
 No se ha realizado una auditoría formal de accesibilidad, medición Lighthouse ni prueba en dispositivos físicos. El soporte de movimiento reducido está implementado en CSS y JavaScript. Las integraciones de WhatsApp, redes y formulario necesitan los datos reales del propietario; la entrega de mensajes debe probarse después de conectarlas. GitHub Pages está configurado en `nyra25346-dotcom/studio-web`, desde `main` y la carpeta raíz. Se incluye la guía para futuras actualizaciones.
+
+## Actualización bilingüe — 6 de octubre de 2026
+
+Verificados ES → EN → ES, persistencia después de recargar, navegación móvil traducida, preservación de los campos del formulario, mensajes de formulario y copia en inglés. Sin desbordamiento horizontal en inglés a 375, 390, 430, 768, 1024 y 1440 px. Título de página y atributo `lang` sincronizados. Las capturas de proyectos mantienen el idioma original.
